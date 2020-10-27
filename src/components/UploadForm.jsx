@@ -17,7 +17,7 @@ const UploadForm = () => {
       setFile(null);
       setError('Please select an image file (png or jpeg)');
     }
-  };
+  }
 
   return (
     <form>
