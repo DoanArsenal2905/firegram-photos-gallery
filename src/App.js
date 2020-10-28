@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Footer from './components/Footer.jsx';
 import ImageGrid from './components/ImageGrid.jsx'
 import Modal from './components/Modal.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx';
 import Title from './components/Title.jsx'
 import UploadForm from './components/UploadForm.jsx'
 
@@ -14,6 +15,7 @@ function App() {
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+      <ScrollToTop />
       <Footer />
     </div>
   )
