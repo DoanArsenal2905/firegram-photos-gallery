@@ -45,7 +45,7 @@ label input {
   width: 0;
   opacity: 0;
 }
-label {
+.add {
   display: block;
   width: 40px;
   height: 40px;
@@ -58,7 +58,7 @@ label {
   font-size: 24px;
   cursor: pointer;
 }
-label:hover {
+.add:hover {
   background: var(--third);
   color: white;
 }
@@ -79,10 +79,11 @@ label:hover {
 
 /* image grid styles */
 .img-grid{
+  /* position: relative; */
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 35px;
   background: #f3f9fb;
   border-radius: 5px;
 }
@@ -95,6 +96,37 @@ label:hover {
   opacity: 1;
   cursor: pointer;
   border-radius: 5px;
+}
+.img-show {
+  position: relative;
+}
+.img-show .download {
+  display: none;
+}
+.img-show .delete {
+  display: none;
+}
+.img-show:hover .download {
+  position: absolute;
+  padding: 0;
+  display: inline-block;
+  margin: 10px auto;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  top: 0;
+}
+.img-show:hover .delete {
+  position: absolute;
+  padding: 0;
+  display: inline-block;
+  margin: 10px 30px auto;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  top: 0;
 }
 .img-wrap img{
   min-width: 100%;
@@ -129,7 +161,7 @@ label:hover {
   width: 40px;
   height: 40px;
   bottom: 10px;
-  right: 15px;
+  right: 20px;
   z-index: 1000;
   cursor: pointer;
   animation: fadeIn 0.3s;
@@ -152,6 +184,7 @@ label:hover {
 .footer p {
   text-align: center;
   font-size: 0.9rem;
+  bottom: 0;
 }
 
 /* responsive img */
@@ -201,7 +234,7 @@ label:hover {
     width: 30px;
     height: 30px;
     bottom: 10px;
-    right: 5px;
+    right: 7px;
     z-index: 1000;
     cursor: pointer;
     animation: fadeIn 0.3s;
@@ -210,11 +243,16 @@ label:hover {
   }
 }
 @media only screen and (max-width: 400px) {
+  .App {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .scroll-top {
     position: fixed;
     width: 20px;
     height: 20px;
     bottom: 13px;
+    right: 12px;
     z-index: 1000;
     cursor: pointer;
     animation: fadeIn 0.3s;

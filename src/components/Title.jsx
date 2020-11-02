@@ -8,7 +8,7 @@ const Title = () => {
         <p>Welcome, Guys !</p>
       </div>
       <h2>Your Photos</h2>
-      <p>Upload your favourite photos here.</p>
+      <p>Upload your favourite photos here <span role='img' aria-label='okay'>&#128076;</span></p>
     </div>
   )
 }
