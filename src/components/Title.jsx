@@ -18,12 +18,12 @@ const Title = () => {
           <div className='menu'>
             <h1>FireGram</h1>
             <div style={{ display: 'flex' }}>
-              <p>Welcome you!</p>
+              <p className='welcome'>Welcome you!</p>
               <Toggle theme={theme} toggleTheme={themeToggler} />
             </div>
           </div>
           <h2>Your Photos</h2>
-          <p>Upload your favourite photos here <span role='img' aria-label='okay'>&#128076;</span></p>
+          <p className='des'>Upload your favourite photos here <span role='img' aria-label='okay'>&#128076;</span></p>
         </div>
       </>
     </ThemeProvider>

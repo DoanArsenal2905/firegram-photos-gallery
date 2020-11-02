@@ -243,9 +243,9 @@ label input {
     max-width: 85%;
     margin: 0 auto;
   }
-  .title p {
+  .title .welcome {
     font-size: 15px;
-    padding: 5px 0;
+    padding: 4px 0;
   }
   .scroll-top {
     position: fixed;
