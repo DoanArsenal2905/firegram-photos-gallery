@@ -9,7 +9,7 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 20px;
   font-size: 0.8rem;
-  margin: 15px 0px 15px 10px;
+  margin: 15px 0px 15px 5px;
   &:focus {
     outline: none;
   }

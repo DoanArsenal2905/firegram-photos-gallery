@@ -18,7 +18,7 @@ const Title = () => {
           <div className='menu'>
             <h1>FireGram</h1>
             <div style={{ display: 'flex' }}>
-              <p>Welcome, Guys !</p>
+              <p>Welcome you!</p>
               <Toggle theme={theme} toggleTheme={themeToggler} />
             </div>
           </div>

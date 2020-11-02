@@ -193,7 +193,6 @@ label input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
-    background: #f3f9fb;
     border-radius: 5px;
   }
 }
@@ -203,7 +202,6 @@ label input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
-    background: #f3f9fb;
     border-radius: 5px;
   }
   .scroll-top {
@@ -225,7 +223,6 @@ label input {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
-    background: #f3f9fb;
     border-radius: 5px;
   }
   .scroll-top {
@@ -243,8 +240,12 @@ label input {
 }
 @media only screen and (max-width: 400px) {
   .App {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
+  }
+  .title p {
+    font-size: 15px;
+    padding: 5px 0;
   }
   .scroll-top {
     position: fixed;
