@@ -9,10 +9,10 @@
 }
 
 /* base styles & title */
-body {
+/* body {
   font-family: "Noto Serif";
   color: var(--secondary);
-}
+} */
 .App {
   max-width: 90%;
   margin: 0 auto;
@@ -84,7 +84,6 @@ label input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 35px;
-  background: #f3f9fb;
   border-radius: 5px;
 }
 .img-wrap{
