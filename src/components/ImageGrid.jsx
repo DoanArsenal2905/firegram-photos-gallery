@@ -3,6 +3,7 @@ import useFirestore from '../hooks/useFirestore'
 import { projectFirestore } from '../firebase/config'
 import { motion } from 'framer-motion'
 import { FiTrash2, FiDownload } from 'react-icons/fi'
+import LazyLoad from 'react-lazyload'
 
 const ImageGrid = ({setSelectedImg}) => {
   const { docs } = useFirestore('images')
@@ -24,12 +25,14 @@ const ImageGrid = ({setSelectedImg}) => {
           whileHover={{ opacity: 0.8 }}
           layout
           onClick={() => setSelectedImg(doc.url)}
-        >
-            <motion.img src={doc.url} alt='upload-pic'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
-            />
+          >
+            <LazyLoad height={200} once={true}>
+              <motion.img src={doc.url} alt='upload-pic'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1 }}
+              />
+            </LazyLoad>
           </motion.div>
           <label className='download'>
             <input className='button' onClick={() => onClickDownloadImage(doc.url)}></input>
