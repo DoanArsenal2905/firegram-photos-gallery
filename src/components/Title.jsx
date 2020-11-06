@@ -22,8 +22,10 @@ const Title = () => {
               <Toggle theme={theme} toggleTheme={themeToggler} />
             </div>
           </div>
-          <h2>Your Photos</h2>
-          <p className='des'>Upload your favourite photos here <span role='img' aria-label='okay'>&#128076;</span></p>
+          <div className='banner'>
+            <h2>Your Photos</h2>
+          </div>
+          <p className='des'>Upload your favourite photos here <span role='img' aria-label='okay'>👌</span></p>
         </div>
       </>
     </ThemeProvider>

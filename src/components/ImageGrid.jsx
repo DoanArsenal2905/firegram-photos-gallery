@@ -13,7 +13,7 @@ const ImageGrid = ({setSelectedImg}) => {
   }
 
   const onClickDeleteImage = (id, collection) => {
-    if ((window.confirm('Are you sure to delete this photo?'))) projectFirestore.collection(collection).doc(id).delete()
+    if ((window.confirm('Are you sure to delete this photo? 🤔'))) projectFirestore.collection(collection).doc(id).delete()
   }
 
   return (
@@ -34,14 +34,16 @@ const ImageGrid = ({setSelectedImg}) => {
               />
             </LazyLoad>
           </motion.div>
-          <label className='download'>
-            <input className='button' onClick={() => onClickDownloadImage(doc.url)}></input>
-            <FiDownload />
-          </label>
-          <label className='delete'>
-            <input className='button' onClick={() => onClickDeleteImage(doc.id, 'images')}></input>
-            <FiTrash2 />
-          </label>
+          <div className='down-del'>
+            <label className='download'>
+              <input className='button' onClick={() => onClickDownloadImage(doc.url)}></input>
+              <FiDownload />
+            </label>
+            <label className='delete'>
+              <input className='button' onClick={() => onClickDeleteImage(doc.id, 'images')}></input>
+              <FiTrash2 />
+            </label>
+          </div>
         </div>
       ))}
     </div>
